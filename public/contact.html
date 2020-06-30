@@ -34,6 +34,31 @@ Creador de Video Juegos.">
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="162146098010170"
+  logged_in_greeting="Hola, en que puedo ayudarte?"
+  logged_out_greeting="Hola, en que puedo ayudarte?">
+      </div>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
         <div class="container"><a class="navbar-brand logo" href="index.html">Axel Valenzuela</a><a href="https://studentpartners.microsoft.com/es-es/Account/DisplayMSPCertificate?url=a6d7e58fd8e94ad79237c667d6d1ff96" style="width: 55px;height: 46px;margin-top: -9px;margin-left: -3px;"
                 target="_blank"><img src="assets/img/msp-badge-beta_120x120.png" style="width: 50px;height: 50px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
